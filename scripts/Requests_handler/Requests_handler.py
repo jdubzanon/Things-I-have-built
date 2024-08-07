@@ -105,7 +105,7 @@ class RequestHandler:
 	async def make_request(self):
 		competitors = self.get_competitors()
 		if competitors:
-			header = {'User-Agent':'thorntonbill343@gmail.com'}
+			header = {'User-Agent':'email'}
 			json_list = list()
 			company_ticker_map = None
 			async with aiohttp.ClientSession(headers=header) as session:
