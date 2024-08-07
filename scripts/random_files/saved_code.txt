@@ -1,0 +1,45 @@
+if len revenue_key > 1:
+	
+	#######code saved just in case below
+	
+			if ( not 'Revenue' in self.revenue_key or not 'Revenues' in self.revenue_key): 
+					revenue_df_one = pd.DataFrame(company_facts['facts'][accounting_keys[0]][self.revenue_key[0]]['units'][self.unit[0]],columns=columns)
+					revenue_df_two = pd.DataFrame(company_facts['facts'][accounting_keys[0]][self.revenue_key[1]]['units'][self.unit[0]],columns=columns)
+					
+					#getting the first revenue category
+					revenue_list_one = get_arr.get_arr(revenue_df_one)
+					
+					#getting the second revenue catetory
+					revenue_list_two = get_arr.get_arr(revenue_df_two)
+					
+#					if theres multiple categories but one list is empty
+					if any([ 
+					
+						all([ len(revenue_list_one) > 0 , len(revenue_list_two) < 1]  ),
+						all([ len(revenue_list_one) < 1, len(revenue_list_two) > 0 ])     
+						
+		]): #if one list is populate and another list is empty 
+						
+						if revenue_list_one: #revenue_list_one populated and revenue_list_two empty
+							shape = (len(revenue_list_one),)
+							revenue_list_two = np.zeros(shape,dtype=np.int64)
+							self.revenue_list = np.add(revenue_list_one,revenue_list_two) 
+					
+					
+						else : #revenue_list_two populated revenue_list_one empty
+							shape = (len(revenue_list_two) ,)
+							revenue_list_one = np.zeros(shape,dtype=np.int64)
+							self.revenue_list = np.add(revenue_list_one,revenue_list_two)
+					
+							
+					else: #both list are populated and of the same size
+						 #adding the revenue categories together
+						
+						#making sure list are of same length for broadcasting
+						smallest_size = min(len(revenue_list_one),len(revenue_list_two))
+						while len(revenue_list_one) != smallest_size:
+							revenue_list_one.pop()
+						while len(revenue_list_two) != smallest_size:
+							revenue_list_two.pop()
+						
+						self.revenue_list = np.add(revenue_list_one,revenue_list_two)

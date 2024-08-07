@@ -1,0 +1,76 @@
+
+match 1 State: Montana Year: 2001 Data.Rates.Violent.Assault: 302.1 Data.Rates.Violent.Murder: 3.8 
+
+match 2 State: Montana Year: 2002 Data.Rates.Violent.Assault: 292.3 Data.Rates.Violent.Murder: 1.8 
+
+match 3 State: Montana Year: 2003 Data.Rates.Violent.Assault: 302.5 Data.Rates.Violent.Murder: 3.3 
+
+match 4 State: Montana Year: 2004 Data.Rates.Violent.Assault: 235.9 Data.Rates.Violent.Murder: 3.2 
+
+match 5 State: Montana Year: 2005 Data.Rates.Violent.Assault: 228.7 Data.Rates.Violent.Murder: 1.9 
+
+match 6 State: Montana Year: 2006 Data.Rates.Violent.Assault: 312.3 Data.Rates.Violent.Murder: 3.5 
+
+match 7 State: Montana Year: 2007 Data.Rates.Violent.Assault: 314.8 Data.Rates.Violent.Murder: 2.8 
+
+match 8 State: Montana Year: 2008 Data.Rates.Violent.Assault: 249.2 Data.Rates.Violent.Murder: 4.1 
+
+match 9 State: Montana Year: 2009 Data.Rates.Violent.Assault: 223.7 Data.Rates.Violent.Murder: 3.3 
+
+match 10 State: Montana Year: 2010 Data.Rates.Violent.Assault: 224.2 Data.Rates.Violent.Murder: 2.5 
+
+match 11 State: Montana Year: 2011 Data.Rates.Violent.Assault: 219.4 Data.Rates.Violent.Murder: 2.9 
+
+match 12 State: Montana Year: 2012 Data.Rates.Violent.Assault: 212.8 Data.Rates.Violent.Murder: 2.7 
+
+match 13 State: Montana Year: 2013 Data.Rates.Violent.Assault: 190.2 Data.Rates.Violent.Murder: 2.2 
+
+match 14 State: Montana Year: 2014 Data.Rates.Violent.Assault: 247.4 Data.Rates.Violent.Murder: 3.6 
+
+match 15 State: Montana Year: 2015 Data.Rates.Violent.Assault: 272.8 Data.Rates.Violent.Murder: 3.5 
+
+match 16 State: Montana Year: 2016 Data.Rates.Violent.Assault: 283.9 Data.Rates.Violent.Murder: 3.5 
+
+match 17 State: Montana Year: 2017 Data.Rates.Violent.Assault: 286.7 Data.Rates.Violent.Murder: 3.9 
+
+match 18 State: Montana Year: 2018 Data.Rates.Violent.Assault: 293.7 Data.Rates.Violent.Murder: 3.2 
+
+match 19 State: Montana Year: 2019 Data.Rates.Violent.Assault: 324.9 Data.Rates.Violent.Murder: 2.5 
+
+match 20 State: New York Year: 2001 Data.Rates.Violent.Assault: 298.5 Data.Rates.Violent.Murder: 5.0 
+
+match 21 State: New York Year: 2002 Data.Rates.Violent.Assault: 280.0 Data.Rates.Violent.Murder: 4.8 
+
+match 22 State: New York Year: 2003 Data.Rates.Violent.Assault: 255.0 Data.Rates.Violent.Murder: 4.9 
+
+match 23 State: New York Year: 2004 Data.Rates.Violent.Assault: 243.3 Data.Rates.Violent.Murder: 4.6 
+
+match 24 State: New York Year: 2005 Data.Rates.Violent.Assault: 238.9 Data.Rates.Violent.Murder: 4.5 
+
+match 25 State: New York Year: 2006 Data.Rates.Violent.Assault: 235.5 Data.Rates.Violent.Murder: 4.8 
+
+match 26 State: New York Year: 2007 Data.Rates.Violent.Assault: 233.9 Data.Rates.Violent.Murder: 4.2 
+
+match 27 State: New York Year: 2008 Data.Rates.Violent.Assault: 216.1 Data.Rates.Violent.Murder: 4.3 
+
+match 28 State: New York Year: 2009 Data.Rates.Violent.Assault: 223.1 Data.Rates.Violent.Murder: 4.0 
+
+match 29 State: New York Year: 2010 Data.Rates.Violent.Assault: 227.9 Data.Rates.Violent.Murder: 4.5 
+
+match 30 State: New York Year: 2011 Data.Rates.Violent.Assault: 233.5 Data.Rates.Violent.Murder: 3.9 
+
+match 31 State: New York Year: 2012 Data.Rates.Violent.Assault: 242.3 Data.Rates.Violent.Murder: 3.5 
+
+match 32 State: New York Year: 2013 Data.Rates.Violent.Assault: 234.7 Data.Rates.Violent.Murder: 3.3 
+
+match 33 State: New York Year: 2014 Data.Rates.Violent.Assault: 229.4 Data.Rates.Violent.Murder: 3.1 
+
+match 34 State: New York Year: 2015 Data.Rates.Violent.Assault: 225.0 Data.Rates.Violent.Murder: 3.1 
+
+match 35 State: New York Year: 2016 Data.Rates.Violent.Assault: 228.3 Data.Rates.Violent.Murder: 3.2 
+
+match 36 State: New York Year: 2017 Data.Rates.Violent.Assault: 220.8 Data.Rates.Violent.Murder: 2.8 
+
+match 37 State: New York Year: 2018 Data.Rates.Violent.Assault: 220.9 Data.Rates.Violent.Murder: 2.9 
+
+match 38 State: New York Year: 2019 Data.Rates.Violent.Assault: 229.0 Data.Rates.Violent.Murder: 2.9 

@@ -1,0 +1,46 @@
+inventory to net earnings  ---see book
+revievables to gross sales (revievables / revenue) --see book 
+return on equity (net income/equity)
+capex per share to eps --see book 
+	capex per share (capex / total shares)
+	
+equity bond analysis --see book
+	pretax earnings per share / current stock price = return
+	compare long term corporate bond rate to pretax earnings 
+	current eps/current stock price is eps bond rate for stock (expected return on investement)
+	long term corporate bond rate vs stock eps bond rate
+	
+	
+return on captial (Net Income-Dividends)/(Debt+Equity)
+
+return on assets (net income)/total assets  --over 5% 5% states that 5 cents for every dollar invested
+	--another article states (net income / avg total assets over a time period)
+ 	--should be looked at against other companies to see if it is doing a better job
+
+debt to asset ratio (total debt / total assets)
+	--leverage gear how much of assets is financed by debt 
+	-- ratio of 1 or higher shows 100% funded by debt/ the lower the ratio the better
+	
+cash to current liabilites (cash + cash equivalents / current liabilites)
+	--less than one not enough cash to pay off current liabilites
+	--maybe add in accounts revievables at a discount 
+	--meaured over time look for cash decreasing rapidly
+
+current ratio (current assets/current liabilites)
+	measured against an avg of others
+	can assets cover liabilites
+free cash flow  (operating cash flow - capex ) or 
+
+[(gross profit - operating expenses) x (1 - tax expense/EBIT)] - (current PP&E - prior year PP&E)
+	--- operating expense sga and RnD
+	--also (operating income - (1-effective tax rate)  
+		--operating income is gross profit - operating expenses
+		--capex either current year PP&E - prior year PP&E or PaymentsToPP&E
+
+pretax EPS % increase/decrease (EBIT / total shares)
+eps %increase/decrease over last 10yrs
+Retain earnings per share (retained earnings / total shares)
+avg % increase pretax ,% increase EPS, % increase retained earnings = avg growth
+avg P/E ratio over n yrs vs current P/E ratio
+ave P/E 10ys * x current EPS = entry price 
+

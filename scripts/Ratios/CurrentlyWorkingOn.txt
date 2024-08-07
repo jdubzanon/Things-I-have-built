@@ -1,0 +1,42 @@
+
+dec 19th
+THINGS NEED TO BE DONE:
+growth_calculate needs to be reviewed
+build forks
+inventory to net earnings
+receivables to gross sales
+	receivables module
+return on equity
+capex per share
+eps growth
+retained earnings per share
+create a bank metric for receivables
+
+maybe do the line up dates in rev class where service and goods need to be added together
+
+
+THINGS COMPLETED:
+sga to gross profit in func_4_metrics
+retain_earnings growth in func_4_metric
+net_profit growth feeds to growth_calculate in func_4_metric
+yrs till debt paid off (long_term_debt to net_profit ratio) in func_4_metric
+
+
+pretax growth in future_n_flying
+debt-to-equity in future_n_flying
+pretax eps in future_n_flying
+pretax growth in future_n_flying
+int exp to op inc  in future_n_flying
+cash to liabilites in future_n_flying
+current asset to current liabilites in future_n_flying
+free cashflow in future_n_flying
+gross_profit percent of revenue in future_n_flying
+return on assets in future_n_flying
+return on capital in future_n_flying
+total liabilites to total assets in future_n_flying
+
+
+########
+byte string to dictionary in randome files concepts.py
+
+

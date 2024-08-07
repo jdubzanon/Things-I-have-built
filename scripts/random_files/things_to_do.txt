@@ -1,0 +1,29 @@
+invetory module
+check the industry because some industries dont have inventory
+use yfinance to check industry
+need to finish inventory/see notes on module
+
+
+gross profit calculation
+check the industy 
+if banks revenue -  interest exp
+if investment firm there is no cogs or int exp just use revenue values
+
+long term debt module
+check for longtermloansfrombank in possible keys list saw this in BABA json
+
+
+all module MUST HAVE A FORK
+may have to do a check when forking because some industries dont have certain modules for calculations ie banks dont have inventory 
+add fork_on if the module does a fork
+add fork = false
+if forked then fork = True
+if fork on then do fork
+when forking you need to use yfinance
+build fork dataframe algos to get info for modules
+
+
+redo all calculations
+make a function for each calculation
+pass classes to each calculation
+

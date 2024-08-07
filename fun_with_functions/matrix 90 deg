@@ -1,0 +1,23 @@
+matrix = [[i for i in range(5)]for i in range(5)]
+for lst in matrix:
+    print(lst)
+
+
+def turn_matrix_90_deg(n):
+    matrix = [[ i for i in range(n)] for rows in range(n)]
+    count = -1
+    row_selector = 1
+    max_col = n
+    max_row = n - 1
+    while matrix[max_row][0] == 0:
+        for rows in range(n):
+            count += 1
+            matrix[rows][max_col - row_selector] = count
+        count = -1
+        row_selector += 1
+    return matrix
+
+
+
+for lst in turn_matrix_90_deg(5):
+   print(lst)
