@@ -1,28 +1,8 @@
-import sys
-##for gedit 
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/webpage/bin')
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/scripts')
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/webpage/lib/python3.10/site-packages')
-sys.path.append('/home/jdubzanon/hdd/Dev_projects/sec_project/scripts')
-sys.path.append('/home/jdubzanon/hdd/envornments/webpage/lib/python3.10/site-packages')
-
-
 
 import numpy as np
 import key_handler.key_handler as kh
 import get_arr.get_arr as get_arr
 from collections import namedtuple
-
-
-
-#from pathlib import Path as path
-#from pathlib import PurePath as ppath
-#import os
-#import json
-#import requests
-#import time
-
-
 
 
 def GetRatio(rev_class,cogs_class,company_facts):
@@ -169,60 +149,4 @@ def GetRatio(rev_class,cogs_class,company_facts):
 
 
 
-
-
-#from IncomeStatement.revenue import Revenue
-#from IncomeStatement.cogs import Cogs
-
-
-
-
-#dir_path = ppath('/home/jdubzanon/Dev_projects/sec_project/scripts/json_files')
-#single_file = 'BHP.json'
-#final_path = dir_path / single_file
-#ticker = single_file[0:-5]
-#with open(final_path,'r') as fr:
-#	local_file = fr.read()
-#	local_json = json.loads(local_file)
-#	rev = Revenue(ticker)
-#	rev_v = rev.get_revenue_values(local_json)
-#		
-#	cogs = Cogs(ticker)
-#	cogs_v = cogs.get_cog_values(local_json)
-#	test = gross_profit_percent_of_revenue(rev,cogs)
-
-##	test = opInc_to_revenue_ratio(op,rev)		
-#	print(test)
-
-
-
-
-#########################################
-
-
-#dir_path = ppath('/home/jdubzanon/hdd/Dev_projects/sec_project/scripts/json_files')
-##print(sorted(os.listdir(dir_path)))
-#for file_name in sorted(os.listdir(dir_path)):
-#	file_path = dir_path.joinpath(file_name)
-#	print(file_name)
-#	ticker = file_name[0:-5]
-#	with open(file_path,'r') as fr:
-#		local_file = fr.read()	
-#		local_json = json.loads(local_file)
-#		rev = Revenue(ticker)
-#		rev_v = rev.get_revenue_values(local_json)
-#		
-#		cogs = Cogs(ticker)
-#		cogs_v = cogs.get_cog_values(local_json)
-#		
-#		test = gross_profit_percent_of_revenue(rev,cogs,local_json)
-#		
-#		print(test)
-#		
-		
-		
-		
-		
-		
-		
 

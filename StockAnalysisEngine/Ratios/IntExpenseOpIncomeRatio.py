@@ -1,12 +1,3 @@
-import sys
-##for gedit 
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/webpage/bin')
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/scripts')
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/webpage/lib/python3.10/site-packages')
-sys.path.append('/home/jdubzanon/hdd/Dev_projects/sec_project/scripts')
-sys.path.append('/home/jdubzanon/hdd/envornments/webpage/lib/python3.10/site-packages')
-
-
 
 import numpy as np
 import key_handler.key_handler as kh
@@ -15,16 +6,7 @@ from collections import namedtuple
 
 
 
-#from pathlib import Path as path
-#from pathlib import PurePath as ppath
-#import os
-#import json
-#import requests
-#import time
 
-
-#from IncomeStatement.InterestExpense import InterestExpense
-#from IncomeStatement.OperatingIncome import OpIncome
 
 def GetRatio(IntExp_class,OpInc_class,company_facts):
 	FAILED_TO_GET_DATA = {'from ratio func intexp2opic':'cant make calculations'}
@@ -125,51 +107,4 @@ def GetRatio(IntExp_class,OpInc_class,company_facts):
 
 
 
-
-
-
-#dir_path = ppath('/home/jdubzanon/Dev_projects/sec_project/scripts/json_files')
-#single_file = 'HON.json'
-#final_path = dir_path / single_file
-#ticker = single_file[0:-5]
-#with open(final_path,'r') as fr:
-#	local_file = fr.read()
-#	local_json = json.loads(local_file)
-#	op = OpIncome(ticker)
-#	op_v = op.get_OpIncome_values(local_json)
-#	rev = Revenue(ticker)
-#	rev_v = rev.get_revenue_values(local_json)
-
-#	test = opInc_to_revenue_ratio(op,rev)		
-#	print(test)
-
-
-
-
-#########################################
-
-
-#dir_path = ppath('/home/jdubzanon/hdd/Dev_projects/sec_project/scripts/json_files')
-##print(sorted(os.listdir(dir_path)))
-#for file_name in sorted(os.listdir(dir_path)):
-#	file_path = dir_path.joinpath(file_name)
-#	print(file_name)
-#	ticker = file_name[0:-5]
-#	with open(file_path,'r') as fr:
-#		local_file = fr.read()	
-#		local_json = json.loads(local_file)
-#		op = OpIncome(ticker)
-#		op_v = op.get_OpIncome_values(local_json)
-#		
-#		intx = InterestExpense(ticker)
-#		intx_v = intx.get_InterestExpense_values(local_json)
-#		
-#		test = IntExp_to_OpInc_ratio(intx,op,local_json)		
-#		print(test)
-#		
-		
-		
-		
-		
-		
 

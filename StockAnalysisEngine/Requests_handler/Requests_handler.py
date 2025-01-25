@@ -1,11 +1,3 @@
-import sys
-##for gedit 
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/webpage/bin')
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/scripts')
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/webpage/lib/python3.10/site-packages')
-sys.path.append('/home/jdubzanon/hdd/Dev_projects/sec_project/scripts')
-sys.path.append('/home/jdubzanon/hdd/envornments/webpage/lib/python3.10/site-packages')
-
 import unicodedata
 import sqlite3
 import json
@@ -46,7 +38,6 @@ class RequestHandler:
 			url_list = list()
 			for cik_number in np.array(cik_number_list).flatten():
 				url_list.append(session.get(f"https://data.sec.gov/api/xbrl/companyfacts/CIK{str(cik_number).zfill(10)}.json") )
-		#		url_list.append(f"https://data.sec.gov/api/xbrl/companyfacts/CIK{str(cik_number).zfill(10)}.json") 		
 		return (url_list,CompanyName_Tickermap)		
 
 		
@@ -90,7 +81,6 @@ class RequestHandler:
 		
 		while len(comp_list) > 10:
 			comp_list.pop()
-#		print(comp_list) ##<-----------------------get list of competitors
 		#getting rid of duplicates in list of competitors
 		main_stock = comp_list[0][0]
 		main_company_name = comp_list[0][1]
@@ -128,29 +118,17 @@ class RequestHandler:
 			response_list = asyncio.run(self.make_request()) #returns jsons from request and comapany_ticker_map
 			for json in response_list[0]:
 				if response_list[1][unicodedata.normalize('NFKD',json['entityName'].strip())] == self.ticker:
-#					user_ticker_dict[response_list[1][json['entityName']]] = json
 					user_ticker_dict[response_list[1][unicodedata.normalize('NFKD',json['entityName'])]] = json									
 				
 				elif response_list[1][unicodedata.normalize('NFKD',json['entityName'].strip())] != self.ticker:
 					competitor_tickers_dict[response_list[1][unicodedata.normalize('NFKD',json['entityName'])]] = json
 
-	#			json_response_map[response_list[1][json['entityName'.strip()]]] = json
 			
 			
 			return user_ticker_dict,competitor_tickers_dict,response_list[1] ##returns {main ticker:json},{competitors:jsons} {company_names : tickers}
 		else: #if there are no competitors 
 			return None
 
-	
-#request = RequestHandler('MDLZ')
-#comp = request.get_competitors()
-#url = request.url_builder(comp,session=None)
-#request.main()
-
-#print(comp)
-	
-	
-	
 	
 	
 	

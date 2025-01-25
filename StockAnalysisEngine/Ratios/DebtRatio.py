@@ -1,10 +1,4 @@
-import sys
-##for gedit 
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/webpage/bin')
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/scripts')
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/webpage/lib/python3.10/site-packages')
-sys.path.append('/home/jdubzanon/hdd/Dev_projects/sec_project/scripts')
-sys.path.append('/home/jdubzanon/hdd/envornments/webpage/lib/python3.10/site-packages')
+
 
 import numpy as np
 import key_handler.key_handler as kh
@@ -13,12 +7,6 @@ from collections import namedtuple
 
 
 
-#from pathlib import Path as path
-#from pathlib import PurePath as ppath
-#import os
-#import json
-#import requests
-#import time
 
 
 def GetRatio(total_liabilities_class,total_assets_class,company_facts):
@@ -158,46 +146,4 @@ def GetRatio(total_liabilities_class,total_assets_class,company_facts):
 
 
 
-#from BalanceSheet.TotalAssets import TotalAssets
-#from BalanceSheet.TotalLiabilities import TotalLiabilities
 
-#dir_path = ppath('/home/jdubzanon/Dev_projects/sec_project/scripts/json_files')
-#single_file = 'BHP.json'
-#final_path = dir_path / single_file
-#ticker = single_file[0:-5]
-#with open(final_path,'r') as fr:
-#	local_file = fr.read()
-#	local_json = json.loads(local_file)
-#	rev = TotalAssets(ticker)
-#	rev_v = rev.get_TotalAsset_values(local_json)
-#		
-#	cogs = TotalLiabilities(ticker)
-#	cogs_v = cogs.get_TotalLiabilities_values(local_json)
-#	test = total_liabilities_total_assest_ratio(cogs,rev)
-
-#	print(test)
-
-
-
-
-#########################################
-
-
-#dir_path = ppath('/home/jdubzanon/hdd/Dev_projects/sec_project/scripts/json_files')
-##print(sorted(os.listdir(dir_path)))
-#for file_name in sorted(os.listdir(dir_path)):
-#	file_path = dir_path.joinpath(file_name)
-#	print(file_name)
-#	ticker = file_name[0:-5]
-#	with open(file_path,'r') as fr:
-#		local_file = fr.read()	
-#		local_json = json.loads(local_file)
-#		rev = TotalAssets(ticker)
-#		rev_v = rev.get_TotalAsset_values(local_json)
-#		
-#		cogs = TotalLiabilities(ticker)
-#		cogs_v = cogs.get_TotalLiabilities_values(local_json)
-#		test = total_liabilities_total_assest_ratio(cogs,rev,local_json)
-#		
-#		print(test)
-		

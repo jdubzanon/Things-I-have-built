@@ -188,14 +188,11 @@ def line_up_dates_with_values_for_calculation(df_master,df_slave,df_slave2=None,
 	
 	
 	if all([isolate == True, df_slave2 is None  ]): #if no df_slave2 then only master and slave
-#		print('blah blah blah')
 		
 		for master,slave in zip(master_arr,slave_arr):
-#			print(master,slave)
 			if all([master != 0, slave !=0 ]):
 				master_isolated_values.append(master)
 				slave_isolated_values.append(slave)
-#		return (master_isolated_values,slave_isolated_values)		
 	
 	if all([isolate == True, not df_slave2 is None,df_slave3 is None, df_slave4 is None    ]): #if not df_slave2 is None then master,slave and slave2
 		for master,slave,slave2 in zip(master_arr,slave_arr,slave2_arr):
@@ -204,7 +201,6 @@ def line_up_dates_with_values_for_calculation(df_master,df_slave,df_slave2=None,
 				slave_isolated_values.append(slave)
 				slave2_isolated_values.append(slave2)
 		
-#		return (master_isolated_values,slave_isolated_values,slave2_isolated_values)
 				
 	if all([ isolate == True, not df_slave2 is None,not df_slave3 is None, df_slave4 is None]): 
 		for master,slave,slave2,slave3 in zip(master_arr,slave_arr,slave2_arr,slave3_arr):
@@ -288,22 +284,16 @@ def add_multiple_to_get_values(*args):
 			while len(each_list) > shortest_list_length:
 				each_list.pop()
 			adjusted_list.append(each_list)
-#	print(adjusted_list)
 	return list(np.sum(np.array(adjusted_list),axis=0)	)
 
 
 def subtract_two_arrays(arr1,arr2):
 
 	shortest_list_length = min(len(arr1),len(arr2))
-	print(len(arr1))
-	print(len(arr2))
 	while len(arr1) > shortest_list_length:
 		arr1.pop()
 	while len(arr2) > shortest_list_length:
 		arr2.pop()
-	
-	print(len(arr1))
-	print(len(arr2))
 	
 	return np.subtract(arr1,arr2)
 

@@ -37,6 +37,4 @@ class InfoPasser:
 
 
 
-#info = InfoPasser('NVDA')
-#result = info.main()
 

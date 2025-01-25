@@ -1,10 +1,4 @@
-import sys
-##for gedit 
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/webpage/bin')
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/scripts')
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/webpage/lib/python3.10/site-packages')
-sys.path.append('/home/jdubzanon/hdd/Dev_projects/sec_project/scripts')
-sys.path.append('/home/jdubzanon/hdd/envornments/webpage/lib/python3.10/site-packages')
+
 
 import time
 import requests
@@ -149,16 +143,12 @@ class StockMetrics:
 		if self.CompanyName_to_TickerMap:
 			for CompanyName,Ticker in self.CompanyName_to_TickerMap.items():
 				self.Ticker_to_CompanyName[Ticker] = CompanyName
-#		print(self.Ticker_to_CompanyName) ###<--------------------
 #GETTING VALUES SECTIONS
 #				IncomeStatement
 		self.revenue_values = self.revenue.get_revenue_values(self.ticker_json[self.ticker])
 		self.InterestExpense_vaules = self.InterestExpense.get_InterestExpense_values(self.ticker_json[self.ticker])		
 		self.OpIncome_values = self.OpIncome.get_OpIncome_values(self.ticker_json[self.ticker])
-#		self.OpExpense_values = self.OpExpense.get_OpExpense_values(self.ticker_json[self.ticker])
-#		self.cogs_values = self.cogs.get_cog_values(self.ticker_json[self.ticker])
 		self.NetProfit_values = self.NetProfit.get_NetProfit_values(self.ticker_json[self.ticker])
-#		self.sga_values = self.sga.get_sga_values(self.ticker_json[self.ticker])
 		self.TaxesPaid_values = self.TaxesPaid.get_TaxesPaid_values(self.ticker_json[self.ticker])	
 #				BalanceSheet		
 		self.LongTermDebt_values = self.LongTermDebt.get_LongTermDebt_values(self.ticker_json[self.ticker]) #
@@ -168,10 +158,7 @@ class StockMetrics:
 		self.cash_values = self.cash.get_cash_values(self.ticker_json[self.ticker])		#
 		self.CurrentAssets_values =self.CurrentAssets.get_CurrentAsset_values(self.ticker_json[self.ticker])#
 		self.CurrentLiabilities_values = self.CurrentLiabilities.get_CurrentLiabilities_values(self.ticker_json[self.ticker])#
-#		self.inventory_values = self.inventory.get_inventory_values(self.ticker_json[self.ticker])#
 		self.LiabilitiesAndStockholdersEquity_values = self.LiabilitiesAndStockholdersEquity.get_LiabilitiesAndStockholdersEquity_values(self.ticker_json[self.ticker])#
-#		self.NonCurrentAssets_values = self.NonCurrentAssets.get_NonCurrentAsset_values(self.ticker_json[self.ticker])#
-#		self.NonCurrentLiabilities_values = self.NonCurrentLiabilities.get_NonCurrentLiabilities_values(self.ticker_json[self.ticker])#
 		self.receivables_values = self.receivables.get_receivables_values(self.ticker_json[self.ticker])#
 		self.SharesOutstanding_values = self.SharesOutstanding.get_SharesOutstanding_values(self.ticker_json[self.ticker])#
 		self.TotalAssets_values = self.TotalAssets.get_TotalAsset_values(self.ticker_json[self.ticker])#
@@ -185,7 +172,6 @@ class StockMetrics:
 			self.CompanyCashLiabiltiesCurrentValue = CashLiabilitiesRatio.GetRatio(self.cash,self.CurrentLiabilities,self.ticker_json[self.ticker])[0]
 		except KeyError:
 			self.CompanyCashLiabiltiesCurrentValue = CashLiabilitiesRatio.GetRatio(self.cash,self.CurrentLiabilities,self.ticker_json[self.ticker])
-#			print(self.CompanyCashLiabiltiesCurrentValue)
 		self.company_CurrentRatio_avg = GetAverages.GetAvg(CurrentRatio.GetRatio(self.CurrentAssets,self.CurrentLiabilities,self.ticker_json[self.ticker]))		
 		self.company_DebtEquityRatio_avg = GetAverages.GetAvg(DebtEquityRatio.GetRatio(self.TotalLiabilities,self.Shareholders_eq,self.ticker_json[self.ticker]))
 		self.company_DebtRatio_avg = GetAverages.GetAvg(DebtRatio.GetRatio(self.TotalLiabilities,self.TotalAssets,self.ticker_json[self.ticker]))
@@ -519,7 +505,6 @@ class StockMetrics:
 
 if __name__ == '__main__':
 	app=StockMetrics(sys.argv[1])
-#	print(app.CompanyCashLiabiltiesCurrentValue)
 	with Manager() as manager:
 		dictionary = manager.dict()
 		processes = [
@@ -547,47 +532,7 @@ if __name__ == '__main__':
 
 
 
-#headers = {'User-Agent': 'thorntonbill343@gmail.com'}
-#url = 'https://www.sec.gov/files/company_tickers.json'
-#response = requests.get(url,headers=headers)
-#json = response.json()
-#df = pd.DataFrame(json).T	
 
-###########################################
-#df.index = df.ticker
-#sample = df.loc['GOLD']
-#sample_cik = str(sample.cik_str).zfill(10)
-#sample_ticker = sample.ticker
-#url = f'https://data.sec.gov/api/xbrl/companyfacts/CIK{sample_cik}.json'
-#print(url)
-#response = requests.get(url,headers=headers)
-
-#app = StockMetrics(sample_ticker)
-#print(app.RetainedEarnings_values)
-
-
-
-
-
-	
-#for num in range(100,200):
-#	print(num)
-#	sample = df.iloc[num]
-#	sample_cik = str(sample.cik_str).zfill(10)
-#	sample_ticker = sample.ticker
-#	url = f'https://data.sec.gov/api/xbrl/companyfacts/CIK{sample_cik}.json'
-#	print(sample_ticker)
-#	response = requests.get(url,headers=headers)
-
-#	try:
-#		data = response.json()
-#	except:
-#		continue
-#	a = time.time()
-#	app = StockMetrics(sample_ticker)
-#	print(app.RetainedEarnings_values)
-#	b = time.time()
-#	print(b-a)
 #	
 	
 		

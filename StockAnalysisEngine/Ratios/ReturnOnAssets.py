@@ -1,10 +1,3 @@
-import sys
-##for gedit 
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/webpage/bin')
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/scripts')
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/webpage/lib/python3.10/site-packages')
-sys.path.append('/home/jdubzanon/hdd/Dev_projects/sec_project/scripts')
-sys.path.append('/home/jdubzanon/hdd/envornments/webpage/lib/python3.10/site-packages')
 
 import numpy 
 import key_handler.key_handler as kh
@@ -81,54 +74,6 @@ def GetRatio(NetInc_class,total_assets_class,company_facts):
 	return_on_assets_values = list(map(lambda net_income,assets: round((net_income / assets),ndigits=2), net_income.values,assets.values    ))		
 
 	return return_on_assets_values
-
-
-
-
-
-#from BalanceSheet.TotalAssets import TotalAssets
-#from IncomeStatement.NetProfit import NetProfit
-
-
-#from pathlib import Path as path
-#from pathlib import PurePath as ppath
-#import os
-#import json
-
-#dir_path = ppath('/home/jdubzanon/Dev_projects/sec_project/scripts/json_files')
-#single_file = 'HON.json'
-#final_path = dir_path / single_file
-#ticker = single_file[0:-5]
-#with open(final_path,'r') as fr:
-#	local_file = fr.read()
-#	local_json = json.loads(local_file)
-#	rev = NetProfit(ticker)
-#	rev_v = rev.get_NetProfit_values(local_json)
-#	print(rev_v)			
-
-
-#dir_path = ppath('/home/jdubzanon/hdd/Dev_projects/sec_project/scripts/json_files')
-#for file_name in sorted(os.listdir(dir_path)):
-#	file_path = dir_path.joinpath(file_name)
-#	with open(file_path,'r') as fr:
-#		local_file = fr.read()	
-#		local_json = json.loads(local_file)
-#		ticker = file_name[0:-5]
-#		print(ticker)
-#		np = NetProfit(ticker)
-#		npv = np.get_NetProfit_values(local_json)
-#		asset = TotalAssets(ticker)
-#		asset_v = asset.get_TotalAsset_values(local_json,start_fork=True)
-#		test = return_on_assets(np,asset,local_json)
-#		
-#		print(test)	
-
-
-
-
-
-
-
 
 
 

@@ -1,10 +1,4 @@
-import sys
-##for gedit 
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/webpage/bin')
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/scripts')
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/webpage/lib/python3.10/site-packages')
-sys.path.append('/home/jdubzanon/hdd/Dev_projects/sec_project/scripts')
-sys.path.append('/home/jdubzanon/hdd/envornments/webpage/lib/python3.10/site-packages')
+
 
 import numpy as np
 import key_handler.key_handler as kh
@@ -13,12 +7,6 @@ from collections import namedtuple
 
 
 
-#from pathlib import Path as path
-#from pathlib import PurePath as ppath
-#import os
-#import json
-#import requests
-#import time
 
 def GetRatio(cash_class,liabilites_class,company_facts): #pass cash and current liabilties
 	FAILED_TO_GET_DATA = {'from cash to liabilites':'cant make calculation'}
@@ -113,58 +101,4 @@ def GetRatio(cash_class,liabilites_class,company_facts): #pass cash and current 
 
 
 
-#from pathlib import Path as path
-#from pathlib import PurePath as ppath
-#import os
-#import json
-#		
 
-#from BalanceSheet.cash import cash
-#from BalanceSheet.CurrentLiabilities import CurrentLiabilities
-
-
-
-#dir_path = ppath('/home/jdubzanon/hdd/Dev_projects/sec_project/scripts/json_files')
-#single_file = 'GE.json'
-#final_path = dir_path / single_file
-#ticker = single_file[0:-5]
-#with open(final_path,'r') as fr:
-#	local_file = fr.read()
-#	local_json = json.loads(local_file)
-#	c_lia = CurrentLiabilities(ticker)
-#	c_lia_v = c_lia.get_CurrentLiabilities_values(local_json)
-#	
-#	cash_ = cash(ticker)
-#	cash_v = cash_.get_cash_values(local_json)
-#	
-#	test = cash_to_current_liabilities(cash_,c_lia,local_json)
-#	
-#	print(test)
-
-
-#dir_path = ppath('/home/jdubzanon/hdd/Dev_projects/sec_project/scripts/json_files')
-#for file_name in sorted(os.listdir(dir_path)):
-#	file_path = dir_path.joinpath(file_name)
-#	with open(file_path,'r') as fr:
-#		local_file = fr.read()	
-#		local_json = json.loads(local_file)
-#		ticker = file_name[0:-5]
-#		print(ticker)
-#		c_lia = CurrentLiabilities(ticker)
-#		c_lia_v = c_lia.get_CurrentLiabilities_values(local_json)
-#		
-#		cash_ = cash(ticker)
-#		cash_v = cash_.get_cash_values(local_json)
-#		
-#		test = cash_to_current_liabilities(cash_,c_lia,local_json)
-#		
-#		print(test)
-##		
-#		
-		
-		
-		
-		
-		
-		
-			

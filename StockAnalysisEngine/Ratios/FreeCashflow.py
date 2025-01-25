@@ -15,12 +15,7 @@ from collections import namedtuple
 
 
 
-#from pathlib import Path as path
-#from pathlib import PurePath as ppath
-#import os
-#import json
-#import requests
-#import time
+
 
 #cash flow changes based on fork if forked capex is reported as a minus
 
@@ -125,50 +120,5 @@ def GetRatio(cashflow_class,capex_class,company_facts):
 		
 		
 		
-		
-#from pathlib import Path as path
-#from pathlib import PurePath as ppath
-#import os
-#import json
-#		
-
-#from CashflowStatement.CashflowOperations import cashflow_operations
-#from CashflowStatement.capex import capex
-
-#dir_path = ppath('/home/jdubzanon/Dev_projects/sec_project/scripts/json_files')
-#dir_path = ppath('/home/jdubzanon/hdd/Dev_projects/sec_project/scripts/json_files')
-#single_file = 'AAPL.json'
-#final_path = dir_path / single_file
-#ticker = single_file[0:-5]
-#with open(final_path,'r') as fr:
-#	local_file = fr.read()
-#	local_json = json.loads(local_file)
-#	cf = cashflow_operations(ticker)
-#	cfv = cf.get_cashflow_operations_values(local_json)
-#	
-#	cap = capex(ticker)
-#	capv = cap.get_capex_values(local_json)
-#	
-#	test = free_cashflow(cf,cap,local_json)
-#	print(test)			
-
-
-#dir_path = ppath('/home/jdubzanon/Dev_projects/sec_project/scripts/json_files')
-#dir_path = ppath('/home/jdubzanon/hdd/Dev_projects/sec_project/scripts/json_files')
-#for file_name in sorted(os.listdir(dir_path)):
-#	file_path = dir_path.joinpath(file_name)
-#	with open(file_path,'r') as fr:
-#		local_file = fr.read()	
-#		local_json = json.loads(local_file)
-#		ticker = file_name[0:-5]
-#		print(ticker)
-#		cf = cashflow_operations(ticker)
-#		cfv = cf.get_cashflow_operations_values(local_json,start_fork=True)
-#	
-#		cap = capex(ticker)
-#		capv = cap.get_capex_values(local_json)
-#	
-#		test = free_cashflow(cf,cap,local_json)
-#		print(test)			
 		
 

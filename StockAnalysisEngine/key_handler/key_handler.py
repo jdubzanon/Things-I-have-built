@@ -25,29 +25,6 @@ def get_accounting_key(company_facts,possible_keys):
 
 
 
-
-#def get_ReportingKey_with_two_accounting_keys(company_facts,accounting_keys,possible_keys):
-#	''' this function handles situations when there are two accounting keys reported. Im looking through both sections of json to find my reporting key'''
-#	
-#	search_dict_key_one = list(filter(lambda key : key.strip() in company_facts['facts'][accounting_keys[0]].keys(), possible_keys))		
-#	search_dict_key_two = list(filter(lambda key : key.strip() in company_facts['facts'][accounting_keys[1]].keys(), possible_keys))
-#	print(search_dict_key_one)
-#	print(search_dict_key_two)
-#	
-#	if search_dict_key_one:
-#		reporting_key = search_dict_key_one
-#	else:
-#		reporting_key = search_dict_key_two
-#	
-#	return reporting_key
-#	
-	
-
-
-
-
-
-
 def set_unit_key(company_facts,accounting_key,reporting_key): 
 	
 	if isinstance(reporting_key,str):
@@ -77,7 +54,6 @@ def set_unit_key(company_facts,accounting_key,reporting_key):
 				except:
 					continue
 ####			 if there are mulitple keys i want the one with the most information available
-#		print(looking_for_best_key)
 		looking_for_best_key = sorted(tracker,key=itemgetter(1),reverse=True)
 		best_reporting_key = looking_for_best_key[0][0]
 		return [best_reporting_key]

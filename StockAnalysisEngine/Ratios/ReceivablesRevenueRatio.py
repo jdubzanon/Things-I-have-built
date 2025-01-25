@@ -1,11 +1,3 @@
-import sys
-##for gedit 
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/webpage/bin')
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/scripts')
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/webpage/lib/python3.10/site-packages')
-sys.path.append('/home/jdubzanon/hdd/Dev_projects/sec_project/scripts')
-sys.path.append('/home/jdubzanon/hdd/envornments/webpage/lib/python3.10/site-packages')
-
 import numpy as np
 import key_handler.key_handler as kh
 import get_arr.get_arr as get_arr
@@ -148,69 +140,4 @@ def GetRatio(rev_class,rec_class,company_facts):
 
 
 
-#from pathlib import Path as path
-#from pathlib import PurePath as ppath
-#import os
-#import json
-#import requests
-#import time
 
-
-
-
-
-
-
-
-#from IncomeStatement.revenue import Revenue
-#from BalanceSheet.receivables import receivables
-
-
-#from pathlib import Path as path
-#from pathlib import PurePath as ppath
-#import os
-#import json
-
-#dir_path = ppath('/home/jdubzanon/Dev_projects/sec_project/scripts/json_files')
-#dir_path = ppath('/home/jdubzanon/hdd/Dev_projects/sec_project/scripts/json_files')
-#single_file = 'UNP.json'
-#final_path = dir_path / single_file
-#ticker = single_file[0:-5]
-#with open(final_path,'r') as fr:
-#	local_file = fr.read()
-#	local_json = json.loads(local_file)
-#	print(ticker)
-#	rec = receivables(ticker)
-#	recv = rec.get_receivables_values(local_json)
-#	
-#	rev = Revenue(ticker)
-#	revv = rev.get_revenue_values(local_json)
-#	
-#	
-#	test = receivables_to_revenue(rev,rec,local_json)
-#	print(test)
-
-###dir_path = ppath('/home/jdubzanon/Dev_projects/sec_project/scripts/json_files')
-#dir_path = ppath('/home/jdubzanon/hdd/Dev_projects/sec_project/scripts/json_files')
-#for file_name in sorted(os.listdir(dir_path)):
-#	file_path = dir_path.joinpath(file_name)
-#	with open(file_path,'r') as fr:
-#		local_file = fr.read()	
-#		local_json = json.loads(local_file)
-#		ticker = file_name[0:-5]
-#		print(ticker)
-#		rec = receivables(ticker)
-#		recv = rec.get_receivables_values(local_json)
-#		
-#		rev = Revenue(ticker)
-#		revv = rev.get_revenue_values(local_json)
-#		
-#		
-#		test = receivables_to_revenue(rev,rec,local_json)
-#		print(test)
-#		
-		
-		
-		
-		
-		

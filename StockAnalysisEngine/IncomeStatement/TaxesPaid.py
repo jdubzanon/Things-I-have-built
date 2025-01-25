@@ -77,36 +77,3 @@ class TaxesPaid:
 
 
 
-
-#dir_path = ppath('/home/jdubzanon/hdd/Dev_projects/sec_project/scripts/json_files')
-#single_file = 'BP.json'
-#final_path = dir_path / single_file
-#ticker = single_file[0:-5]
-#with open(final_path,'r') as fr:
-#	local_file = fr.read()
-#	local_json = json.loads(local_file)
-#	tp = TaxesPaid(ticker)
-#	tpv = tp.get_TaxesPaid_values(local_json)
-#	print(tpv)
-
-
-
-#########################################
-
-
-#dir_path = ppath('/home/jdubzanon/Dev_projects/sec_project/scripts/json_files')
-#dir_path = ppath('/home/jdubzanon/hdd/Dev_projects/sec_project/scripts/json_files')
-#for file_name in sorted(os.listdir(dir_path)):
-#	file_path = dir_path.joinpath(file_name)
-#	print(file_name)
-#	with open(file_path,'r') as fr:
-#		local_file = fr.read()	
-#		local_json = json.loads(local_file)
-#		ticker = file_name[0:-5]
-#		tr = TaxesPaid(ticker)
-#		test = tr.get_TaxesPaid_values(local_json)
-#		print(test)	
-		
-		
-		
-		

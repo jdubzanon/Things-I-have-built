@@ -1,12 +1,3 @@
-import sys
-##for gedit 
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/webpage/bin')
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/scripts')
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/webpage/lib/python3.10/site-packages')
-sys.path.append('/home/jdubzanon/hdd/Dev_projects/sec_project/scripts')
-sys.path.append('/home/jdubzanon/hdd/envornments/webpage/lib/python3.10/site-packages')
-
-
 
 import numpy as np
 import key_handler.key_handler as kh
@@ -15,12 +6,7 @@ from collections import namedtuple
 
 
 
-#from pathlib import Path as path
-#from pathlib import PurePath as ppath
-#import os
-#import json
-#import requests
-#import time
+
 
 
 def GetRatio(TL_class,SharHolEq_class,company_facts):
@@ -182,67 +168,3 @@ def GetRatio(TL_class,SharHolEq_class,company_facts):
 		
 		
 
-
-#from BalanceSheet.TotalLiabilities import TotalLiabilities
-#from BalanceSheet.ShareholdersEquity import ShareholdersEquity
-
-#dir_path = ppath('/home/jdubzanon/hdd/Dev_projects/sec_project/scripts/json_files')
-#file_name = 'TMO.json'
-#file_path = dir_path.joinpath(file_name)
-#ticker = file_name[0:-5]
-#with open(file_path,'r') as fr:
-#	local_file = fr.read()	
-#	local_json = json.loads(local_file)
-#	
-#	sh = ShareholdersEquity(ticker)
-#	shv = sh.get_ShareholdersEquity_values(local_json)
-#	
-#	total = TotalLiabilities(ticker)
-#	totalv = total.get_TotalLiabilities_values(local_json)
-#	test = debt_to_equity_ratio(total,sh,local_json)
-#	
-#	print(test)
-
-
-
-
-
-
-#dir_path = ppath('/home/jdubzanon/hdd/Dev_projects/sec_project/scripts/json_files')
-##print(sorted(os.listdir(dir_path)))
-#for file_name in sorted(os.listdir(dir_path)):
-#	file_path = dir_path.joinpath(file_name)
-#	print(file_name)
-#	ticker = file_name[0:-5]
-#	with open(file_path,'r') as fr:
-#		local_file = fr.read()	
-#		local_json = json.loads(local_file)
-#		
-#		sh = ShareholdersEquity(ticker)
-#		shv = sh.get_ShareholdersEquity_values(local_json)
-#		
-#		total = TotalLiabilities(ticker)
-#		totalv = total.get_TotalLiabilities_values(local_json)
-#		test = debt_to_equity_ratio(total,sh,local_json)
-#		
-#		print(test)
-##				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
-				
