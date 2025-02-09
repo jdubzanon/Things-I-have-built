@@ -1,12 +1,3 @@
-import sys
-##for gedit 
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/webpage/bin')
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/scripts')
-sys.path.append('/home/jdubzanon/Dev_projects/sec_project/webpage/lib/python3.10/site-packages')
-sys.path.append('/home/jdubzanon/hdd/Dev_projects/sec_project/scripts')
-sys.path.append('/home/jdubzanon/hdd/envornments/webpage/lib/python3.10/site-packages')
-
-
 
 import numpy as np
 import key_handler.key_handler as kh
